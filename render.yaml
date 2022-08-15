@@ -1,7 +1,7 @@
 services:
+  # this is the Twingate connector that allows access into the Render private network.
   - type: worker
-    name: tg-connector
-    repo: https://github.com/Twingate-Labs/tg-render.git
+    name: twingate-connector
     branch: main
     env: docker
     dockerfilePath: ./twingate/Dockerfile
@@ -17,3 +17,15 @@ services:
         value: "v1"
       - key: TWINGATE_LABEL_DEPLOYEDBY
         value: "render"
+  # this is a stand-in for a private web service in your Render team
+  - type: pserv
+    name: twingate-private-service
+    branch: main
+    env: docker
+    dockerFilePath: ./example-pserv
+    dockerContext: ./example-pserv
+
+databases:
+  - name: twingate-target
+    type: postgres
+    plan: starter
