@@ -22,10 +22,9 @@ services:
     name: twingate-private-service
     branch: main
     env: docker
-    dockerFilePath: ./example-pserv
+    dockerFilePath: ./example-pserv/Dockerfile
     dockerContext: ./example-pserv
 
 databases:
   - name: twingate-postgres
-    type: postgres
     plan: starter

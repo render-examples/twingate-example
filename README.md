@@ -13,7 +13,7 @@ Twingate themselves have created [an easy video walkthrough](https://www.youtube
   - Select **Docker**, and _leave other settings as default_.
   - Click **Generate Tokens**, which will prompt you to re-authenticate your Twingate account.
   - You'll now have an `Access Token` and a `Refresh Token`. _Keep these handy_.
-- Let's _launch this into Render_! <a href="https://render.com/deploy?repo=https://github.com/render-examples/twingate/tree/main"><img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render"></a>
+- Let's _launch this into Render_! <a href="https://render.com/deploy?repo=https://github.com/render-examples/twingate-example/tree/main"><img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render"></a>
   - You'll be asked to input a few things:
     - Your Twingate account URL, e.g. _https://renderexamples.twingate.com_
     - Your access token, from the above step
