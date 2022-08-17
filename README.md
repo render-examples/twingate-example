@@ -1,7 +1,7 @@
 # Twingate on Render
 This repository demonstrates how to deploy the [Twingate Zero Trust solution](https://www.twingate.com) on the Render cloud. By using Twingate, you'll be able to directly access private resources that aren't exposed to the public web, such as [Render Private Services](https://render.com/docs/private-services) or [Render PostgreSQL](https://render.com/docs/databases) instances.
 
-**This repository is not, as-is, intended to be used in production.** It creates a couple of example services in order to allow you to explore what Twingate and Render can do. If you _do_ want to deploy this into production, you'll want to fork this repository and replace `render.yaml` with `render.standalone.yaml`.
+**This repository is not, as-is, intended to be used in production.** It creates a couple of example services in order to allow you to explore what Twingate and Render can do. If you _do_ want to deploy this into production, you'll want to use [render-examples/twingate](https://github.com/render-examples/twingate) instead.
 
 Twingate themselves have created [an easy video walkthrough](https://www.youtube.com/watch?v=fUukhwxKDoc) of deploying a Twingate connector into Render that's worth checking out if you'd like more information.
 
