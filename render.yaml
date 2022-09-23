@@ -6,6 +6,7 @@ services:
     env: docker
     dockerfilePath: ./twingate/Dockerfile
     dockerContext: ./twingate
+    autoDeploy: false
     envVars:
       - key: TENANT_URL
         sync: false
@@ -22,6 +23,7 @@ services:
     name: twingate-private-service
     branch: main
     env: docker
+    autoDeploy: false
     dockerFilePath: ./example-pserv/Dockerfile
     dockerContext: ./example-pserv
 
