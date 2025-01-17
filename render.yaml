@@ -29,4 +29,5 @@ services:
 
 databases:
   - name: twingate-postgres
-    plan: starter
+    plan: basic-256mb
+    diskSizeGB: 1
